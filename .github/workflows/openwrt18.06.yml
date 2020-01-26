@@ -168,7 +168,7 @@ jobs:
            CONFIG_PACKAGE_luci-app-mwan3helper=y
            CONFIG_PACKAGE_luci-app-openclash=y
            CONFIG_PACKAGE_luci-app-v2ray-server=y
-           CONFIG_PACKAGE_luci-app-verysync=y
+          # CONFIG_PACKAGE_luci-app-verysync=y
           # CONFIG_PACKAGE_luci-app-koolproxyR=y
            CONFIG_PACKAGE_luci-app-webadmin=y
            CONFIG_PACKAGE_luci-app-udpxy=y
