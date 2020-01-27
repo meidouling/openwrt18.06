@@ -52,9 +52,11 @@ jobs:
       - name: 自定义插件
         run: |
            cd package/diy
-           git clone  https://github.com/Flowers-in-thorns/luci-app-vssr-coexist
+           git clone  https://github.com/jerrykuku/luci-app-vssr
            git clone  https://github.com/Sweet-Fairy/openwrt-package
            git clone  https://github.com/vernesong/OpenClash
+           git clone  https://github.com/jerrykuku/luci-theme-argon
+           git clone  https://github.com/Ameykyl/luci-theme-my
            
 
       - name: Update feeds
@@ -187,7 +189,7 @@ jobs:
            CONFIG_PACKAGE_luci-app-samba=y
            CONFIG_PACKAGE_kmod-tcp-bbr-mod=y
            CONFIG_PACKAGE_kmod-tcp-bbr-nanqinlang=y
-           CONFIG_PACKAGE_luci-app-vssr-coexist=y
+           CONFIG_PACKAGE_luci-app-vssr=y
            CONFIG_LUCI_LANG_en=y
            CONFIG_LUCI_LANG_zh-tw=y
            EOF
@@ -197,6 +199,8 @@ jobs:
             CONFIG_PACKAGE_luci-theme-opentomato=y
             CONFIG_PACKAGE_luci-theme-argon-mod=y
             CONFIG_PACKAGE_luci-theme-rosy=y
+            CONFIG_PACKAGE_luci-theme-argon=y
+            CONFIG_PACKAGE_luci-theme-my=y
            EOF
           # 常用软件包:
            cat >> .config <<EOF
