@@ -52,7 +52,7 @@ jobs:
       - name: 自定义插件
         run: |
            cd package/diy
-           git clone  https://github.com/jerrykuku/luci-app-vssr
+           git clone  https://github.com/Leo-Jo-My/luci-app-vssr
            git clone  https://github.com/Sweet-Fairy/openwrt-package
            git clone  https://github.com/vernesong/OpenClash
            git clone  https://github.com/jerrykuku/luci-theme-argon
@@ -189,6 +189,7 @@ jobs:
            CONFIG_PACKAGE_luci-app-samba=y
            CONFIG_PACKAGE_kmod-tcp-bbr-mod=y
            CONFIG_PACKAGE_kmod-tcp-bbr-nanqinlang=y
+           CONFIG_PACKAGE_luci-app-vssr=y
            CONFIG_LUCI_LANG_en=y
            CONFIG_LUCI_LANG_zh-tw=y
            EOF
