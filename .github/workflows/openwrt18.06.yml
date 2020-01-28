@@ -52,11 +52,9 @@ jobs:
       - name: 自定义插件
         run: |
            cd package/diy
-           git clone  https://github.com/Leo-Jo-My/luci-app-vssr
            git clone  https://github.com/Sweet-Fairy/openwrt-package
            git clone  https://github.com/vernesong/OpenClash
            git clone  https://github.com/jerrykuku/luci-theme-argon
-           git clone  https://github.com/Ameykyl/luci-theme-my
            
 
       - name: Update feeds
@@ -199,6 +197,7 @@ jobs:
             CONFIG_PACKAGE_luci-theme-opentomato=y
             CONFIG_PACKAGE_luci-theme-argon-mod=y
             CONFIG_PACKAGE_luci-theme-rosy=y
+            CONFIG_PACKAGE_luci-theme-argon=y
            EOF
           # 常用软件包:
            cat >> .config <<EOF
