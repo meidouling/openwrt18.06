@@ -56,7 +56,6 @@ jobs:
            git clone  https://github.com/Sweet-Fairy/openwrt-package
            git clone  https://github.com/vernesong/OpenClash
            git clone  https://github.com/jerrykuku/luci-theme-argon
-           git clone  https://github.com/Lienol/openwrt-package/tree/master/lienol/luci-app-passwall
            
 
       - name: Update feeds
