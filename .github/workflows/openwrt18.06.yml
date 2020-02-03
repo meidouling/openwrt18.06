@@ -56,6 +56,7 @@ jobs:
            git clone  https://github.com/Sweet-Fairy/openwrt-package
            git clone  https://github.com/vernesong/OpenClash
            git clone  https://github.com/jerrykuku/luci-theme-argon
+           git clone  https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-ssr-plus
            
 
       - name: Update feeds
@@ -142,20 +143,20 @@ jobs:
            CONFIG_PACKAGE_luci-app-openvpn=y
            CONFIG_PACKAGE_luci-app-openvpn-server=y
           # CONFIG_PACKAGE_luci-app-qbittorrent=y
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS=y
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_GoQuiet-client=y
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_GoQuiet-server=y
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Server=y
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Socks=y
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_dnscrypt_proxy=y
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_dnsforwarder=y
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_haproxy=y
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_privoxy=y
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_simple-obfs=y
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_simple-obfs-server=y
-           CONFIG_PACKAGE_udp2raw-tunnel=y
-           CONFIG_PACKAGE_udpspeeder=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_GoQuiet-client=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_GoQuiet-server=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Server=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Socks=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_dnscrypt_proxy=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_dnsforwarder=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_haproxy=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_privoxy=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_simple-obfs=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_simple-obfs-server=y
+          # CONFIG_PACKAGE_udp2raw-tunnel=y
+          # CONFIG_PACKAGE_udpspeeder=y
            CONFIG_PACKAGE_luci-app-trojan-server=y
           # CONFIG_PACKAGE_luci-app-familycloud=y
            CONFIG_PACKAGE_luci-app-smartinfo=y
@@ -189,6 +190,7 @@ jobs:
            CONFIG_PACKAGE_kmod-tcp-bbr-mod=y
            CONFIG_PACKAGE_kmod-tcp-bbr-nanqinlang=y
            CONFIG_PACKAGE_luci-app-vssr-coexist=y
+           CONFIG_PACKAGE_luci-app-ssr-plus=y
            CONFIG_LUCI_LANG_en=y
            CONFIG_LUCI_LANG_zh-tw=y
            EOF
